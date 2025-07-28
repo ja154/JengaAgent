@@ -20,11 +20,6 @@ export enum AgentMode {
   Creative = 'CREATIVE'
 }
 
-export enum Theme {
-    Light = 'light',
-    Dark = 'dark'
-}
-
 export enum AgentPersonality {
     Friendly = 'FRIENDLY',
     Formal = 'FORMAL',
@@ -34,6 +29,5 @@ export enum AgentPersonality {
 export interface UserProfile {
     name: string;
     avatarUrl: string;
-    theme: Theme;
     agentPersonality: AgentPersonality;
 }
