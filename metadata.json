@@ -1,0 +1,6 @@
+{
+  "name": "JengaAgent: Creative + Productivity Copilot",
+  "description": "An autonomous AI agent that helps users create, organize, and automate digital content workflows — from idea to execution. Powered by Gemini.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
