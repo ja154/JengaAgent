@@ -25,7 +25,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, plan, isLoading
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 h-full gap-8">
       {/* Main Chat Area */}
-      <div className="lg:col-span-2 flex flex-col h-full bg-white dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/50 rounded-xl shadow-lg shadow-slate-200/50 dark:shadow-slate-900/50">
+      <div className="lg:col-span-2 flex flex-col h-full bg-slate-800/50 border border-slate-700/50 rounded-xl shadow-lg shadow-slate-900/50">
         <div className="flex-1 p-6 overflow-y-auto custom-scrollbar">
           <div className="flex flex-col gap-y-6">
             {messages.map((msg) => (
@@ -41,7 +41,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, plan, isLoading
           </div>
           <div ref={messagesEndRef} />
         </div>
-        <div className="p-4 border-t border-slate-200/80 dark:border-slate-700/50 bg-white/50 dark:bg-slate-800/30 backdrop-blur-sm rounded-b-xl">
+        <div className="p-4 border-t border-slate-700/50 bg-slate-800/30 backdrop-blur-sm rounded-b-xl">
           <UserInput onSend={onSendMessage} isLoading={isLoading} />
         </div>
       </div>
